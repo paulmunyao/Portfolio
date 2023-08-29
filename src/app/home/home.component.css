@@ -1,0 +1,10 @@
+.intro {
+  text-align: center;
+}
+
+.wave {
+  height: 50px;
+  margin-left: 740px;
+  margin-top: -60px;
+  display: flex;
+}
