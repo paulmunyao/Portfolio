@@ -1,17 +1,70 @@
+.projectspage {
+  overflow-x: hidden;
+}
+
+.homelink {
+  text-decoration: none;
+  margin-left: 100px;
+  color: black;
+}
+
+.projectbrief {
+  text-align: center;
+}
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 40%;
+  width: 60%;
+  margin-left: 80px;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.search-portfolio1 {
+  height: 100px;
 }
 
-.container {
-  padding: 2px 16px;
+.search-portfolio2 {
+  height: 100px;
 }
 
-.search-portfolio {
-    height: 200px;
+@media only screen and (max-width: 600px) {
+  .projectspage {
+    overflow-x: hidden;
+  }
+
+  .homelink {
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 70px;
+    color: black;
+  }
+
+  .card {
+    width: 63%;
+    margin-top: 20px;
+  }
+
+  .search-portfolio1 {
+    height: 100px;
+  }
+
+  .search-portfolio2 {
+    height: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .homelink {
+    margin-left: 60px;
+    font-size: 15px;
+  }
+
+  .brief {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
 }

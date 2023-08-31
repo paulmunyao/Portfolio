@@ -1,3 +1,12 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #f1916d;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow: hidden;
+  }
 }
