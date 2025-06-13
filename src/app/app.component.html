@@ -1,1 +1,17 @@
-<router-outlet></router-outlet>
+<nav class="nav">
+  <div class="container">
+    <div class="nav-content">
+      <a routerLink="/" class="nav-brand">Paul Munyao Mutiso</a>
+      <ul class="nav-links">
+        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Home</a></li>
+        <li><a routerLink="/projects" routerLinkActive="active" class="nav-link">Projects</a></li>
+        <li><a routerLink="/research" routerLinkActive="active" class="nav-link">Research</a></li>
+        <li><a routerLink="/blog" routerLinkActive="active" class="nav-link">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

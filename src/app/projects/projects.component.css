@@ -1,70 +1,30 @@
-.projectspage {
-  overflow-x: hidden;
+/* Component-specific styles */
+.card img {
+  transition: transform 0.3s ease;
 }
 
-.homelink {
-  text-decoration: none;
-  margin-left: 100px;
-  color: black;
+.card:hover img {
+  transform: scale(1.02);
 }
 
-.projectbrief {
-  text-align: center;
+.tech-tag {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-block;
 }
 
-.card {
-  width: 60%;
-  margin-left: 80px;
-}
-
-.search-portfolio1 {
-  height: 100px;
-}
-
-.search-portfolio2 {
-  height: 100px;
-}
-
-@media only screen and (max-width: 600px) {
-  .projectspage {
-    overflow-x: hidden;
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 32px;
   }
-
-  .homelink {
-    text-decoration: none;
+  
+  .btn-outline,
+  .btn-primary {
+    width: 100%;
     text-align: center;
-    font-size: 25px;
-    margin-left: 70px;
-    color: black;
-  }
-
-  .card {
-    width: 63%;
-    margin-top: 20px;
-  }
-
-  .search-portfolio1 {
-    height: 100px;
-  }
-
-  .search-portfolio2 {
-    height: 100px;
-  }
-}
-
-@media (max-width: 320px) {
-  .homelink {
-    margin-left: 60px;
-    font-size: 15px;
-  }
-
-  .brief {
-    font-size: 20px;
-  }
-
-  .card {
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 30px;
   }
 }

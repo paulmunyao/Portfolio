@@ -1,40 +1,29 @@
-.blog {
-  margin-top: 30px;
-}
-.backlink {
-  text-decoration: none;
-  color: black;
-  margin-left: 100px;
-}
-
-.comingsoon {
-  margin-left: 500px;
-}
-
-@media only screen and (max-width: 600px) {
-  .backlink {
-    margin-left: 100px;
-    font-size: 20px;
-  }
-
-  .comingsoon {
-    margin-left: 110px;
-    height: 200px;
-  }
+/* Component-specific styles */
+.coming-soon-icon {
+  width: 120px;
+  height: 120px;
+  background: #f1f5f9;
+  border-radius: 50%;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 320px) {
-  .blog {
-    margin-top: 10px;
-  }
+.coming-soon-icon:hover {
+  transform: scale(1.05);
+}
 
-  .backlink {
-    margin-left: 55px;
-    font-size: 15px;
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    margin-bottom: 12px;
   }
-
-  .comingsoon {
-    margin-left: 100px;
-    height: 100px;
+  
+  .card {
+    padding: 40px 24px !important;
   }
 }

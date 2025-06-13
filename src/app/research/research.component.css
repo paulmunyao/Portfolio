@@ -1,45 +1,35 @@
-.backlink {
-  text-decoration: none;
-  color: black;
-  margin-left: 100px;
+/* Component-specific styles */
+.research-card {
+  transition: all 0.3s ease;
 }
 
-.header {
-  margin-top: 40px;
+.research-card:hover {
+  transform: translateY(-2px);
 }
 
-.researchbrief {
+.research-number {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  min-width: 60px;
   text-align: center;
 }
 
-.example-papers {
-  margin-left: 200px;
-}
-
-.example-papers {
-  margin-left: 200px;
-}
-
-@media only screen and (max-width: 600px) {
-  .backlink {
-    margin-left: 50px;
+@media (max-width: 768px) {
+  .research-card .card-content {
+    flex-direction: column;
+    gap: 16px;
   }
-  .example-papers {
-    margin-left: 40px;
+  
+  .research-number {
+    align-self: flex-start;
   }
-}
-
-@media (max-width: 320px) {
-  .backlink {
-    margin-left: 40px;
-    font-size: 20px;
-  }
-
-  .brief {
-    font-size: 20px;
-  }
-
-  .example-text {
-    font-size: 15px;
+  
+  .btn-outline,
+  .btn-primary {
+    width: 100%;
+    text-align: center;
   }
 }
